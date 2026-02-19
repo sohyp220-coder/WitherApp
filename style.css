@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#063232 65%, #0C8768);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 270px;
+}
+
+div {
+  margin-top: 10px;
+  display: flex;
+  transform: translate(40px,-50px);
+  flex-direction: column;
+  color: #F1F1F1;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: serif;
+  opacity: .9;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 0;
+  font-family: Arial;
+}
+
+i {
+  
+  display: block;
+  font-size: 100px;
+  color: #fff;
+  
+}
+
