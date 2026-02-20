@@ -35,7 +35,7 @@ function showWeather(position) {
             txt.innerHTML = `
                 ${day}, ${day2} ${month}
                 <h2 style='font-size: 50px;'>${temperatureNow}°</h2>
-                <span> غداً ${day2+1}: ${maxfuture[1]}° </span>
+                <span> tomorrow: ${day2+1} ${maxfuture[1]}° </span>
                 <h6 style='margin-top: 30px;'>
                     Humidity: ${humidity}% <br>
                     Rain Probability 🌧️: ${rainP}% <br>
@@ -49,7 +49,7 @@ function showWeather(position) {
             // ترتيب الشروط الصحيح:
             if (ln === 1 || ln === true) { 
                 // حالة النهار
-                if (temperatureNow > 25) {
+                if (temperatureNow >= 21) {
                     i.className = 'fa fa-sun';
                 } else if (temperatureNow >= 18) {
                     i.className = 'fa fa-cloud-sun';
@@ -61,8 +61,7 @@ function showWeather(position) {
                 i.className = 'fa fa-cloud-moon';
             }
 
-            console.log("Current Temp:", temperatureNow, "Is Day:", ln);
-        }
+                  }
     };
     xhr.send();
 }
