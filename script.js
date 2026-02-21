@@ -48,7 +48,7 @@ function showWeather(position) {
 
             if (ln === 1 || ln === true) { 
 
-                if (temperatureNow >= 21) {
+                if (temperatureNow >= 20) {
                     i.className = 'fa fa-sun';
                 } else if (temperatureNow >= 18) {
                     i.className = 'fa fa-cloud-sun';
