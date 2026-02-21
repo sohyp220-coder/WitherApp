@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -5,8 +9,7 @@ html, body {
 }
 
 body {
-  background: linear-gradient(#003D3D 60%,#097D54);
-  display: flex;
+  background: linear-gradient(#058A46,#009BFF,#4F443A);display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -16,16 +19,18 @@ body {
 div {
   display: flex;
   flex-direction: column;
-  align-items: center; /* سنتر العناصر بدلاً من translate */
-  color: #F1F1F1;
+  align-items: center;
+  color: beige;
   font-weight: bold;
-  font-size: 5vw; 
-  font-family: serif;
+  font-size: 5vw;
+  font-family: sans-serif;
   opacity: .9;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 h1 {
-  font-size: 15vw; /* الخط هيصغر تلقائياً على التليفون */
+  font-size: 15vw;
   font-weight: normal;
   font-family: Arial;
   margin: 0;
@@ -37,17 +42,35 @@ i {
   color: #fff;
 }
 
-span, h6 {
+.p {
   max-width: 100%;
-  font-size: 7vw;
+  font-size: 12vw;
   margin: 0;
+  word-wrap: break-word;
+}
+
+.a {
+  max-width: 100%;
+  font-size: 6vw;
+  margin: 0;
+  padding: 2px;
+  word-wrap: break-word;
 }
 
 /* للشاشات المتوسطة (مثل التابلت) */
 @media(min-width: 300px) and (max-width: 1019px){
-  h1 { font-size: 80px; }
-  i { font-size: 130px; }
-  span, h6 { font-size: 40px; }
+  h1 {
+    font-size: 80px;
+  }
+  i {
+    font-size: 130px;
+  }
+  .p {
+    font-size: 40px;
+  }
+  .a {
+    font-size: 20px;
+  }
 }
 
 /* للشاشات الكبيرة (الكمبيوتر) */
@@ -55,7 +78,16 @@ span, h6 {
   div {
     transform: translate(40px,-50px);
   }
-  h1 { font-size: 190px; }
-  i { font-size: 280px; }
-  span, h6 { font-size: 100px; }
+  h1 {
+    font-size: 190px;
+  }
+  i {
+    font-size: 320px;
+  }
+  .p {
+    font-size: 70px;
+  }
+  .a {
+    font-size: 50px;
+  }
 }

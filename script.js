@@ -34,13 +34,13 @@ function showWeather(position) {
             txt.innerHTML = `
                 ${day}, ${day2} ${month}
                 <h2 style='font-size: 50px;'>${temperatureNow}°</h2>
-                <span> tomorrow ${day2+1} : ${maxfuture[1]}° </span>
-                <h6 style='margin-top: 30px;'>
+                <span class='.p'> tomorrow ${day2+1} : ${maxfuture[1]}° </span>
+                <span style='margin-top: 30px;' class='.a'>
                     Humidity: ${humidity}% <br>
                     Rain Probability 🌧️: ${rainP}% <br>
                     Rain 💧: ${rain}mm <br>
                     Wind Speed 🌬: ${wind} m/s
-                </h6>
+                </span>
             `;
 
             const i = document.querySelector('i');
