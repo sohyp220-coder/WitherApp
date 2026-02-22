@@ -16,6 +16,41 @@ body {
   align-items: center;
 }
 
+.div {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.wait  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.wait  div {
+  width: 20px;
+  height: 20px;
+  background: #E94A9D;
+  border-radius: 50%;
+  animation: wai infinite 1s;
+  margin: 0 5px;
+}
+
+.one {
+  animation-delay: 0s;
+}
+
+.two {
+  animation-delay: .2s;
+}
+
+.three {
+  animation-delay: .4s;
+}
+
+
 /* التنسيق الأساسي للموبايل (الشاشات الصغيرة) */
 div {
   display: flex;
@@ -91,4 +126,12 @@ i {
   .a {
     font-size: 70px;
   }
+}
+
+@keyframes wai {
+  0% { opacity: 1; }
+  25% { opacity: .3; }
+  50% { opacity: .5; }
+  75% { opacity: 1; }
+  100% { opacity: 1; }
 }

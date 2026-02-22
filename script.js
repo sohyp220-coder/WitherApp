@@ -44,10 +44,11 @@ function showWeather(position) {
             `;
 
             const i = document.querySelector('i');
-            
-
+            const ii = document.querySelector('.div')
+            const iii = document.querySelector('.wait')
             if (ln === 1 || ln === true) { 
-
+                ii.style.display = 'none';
+                iii.style.display = 'none';
                 if (temperatureNow >= 20) {
                     i.className = 'fa fa-sun';
                 } else if (temperatureNow >= 18) {
