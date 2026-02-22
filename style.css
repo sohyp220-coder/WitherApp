@@ -9,7 +9,8 @@ html, body {
 }
 
 body {
-  background: linear-gradient(#058A46,#009BFF,#4F443A);display: flex;
+  background: linear-gradient(#058A46,#009BFF,#4F443A);
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -60,16 +61,16 @@ i {
 /* للشاشات المتوسطة (مثل التابلت) */
 @media(min-width: 300px) and (max-width: 1019px){
   h1 {
-    font-size: 80px;
+    font-size: 100px;
   }
   i {
-    font-size: 130px;
+    font-size: 120px;
   }
   .p {
-    font-size: 40px;
+    font-size: 60px;
   }
   .a {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 
@@ -79,15 +80,15 @@ i {
     transform: translate(40px,-50px);
   }
   h1 {
-    font-size: 190px;
+    font-size: 210px;
   }
   i {
-    font-size: 320px;
+    font-size: 330px;
   }
   .p {
-    font-size: 70px;
+    font-size: 90px;
   }
   .a {
-    font-size: 50px;
+    font-size: 70px;
   }
 }

@@ -52,7 +52,11 @@ function showWeather(position) {
                     i.className = 'fa fa-sun';
                 } else if (temperatureNow >= 18) {
                     i.className = 'fa fa-cloud-sun';
-                } else {
+                } else if(rinP >= 10){
+                    i.className = 'fa fa-cloud-rain';
+                } else if(rinP >= 10 && rain >= 20 && wind >= 5){
+                    i.className = 'fa fa-cloud-bolt';
+                }  else {
                     i.className = 'fa fa-cloud';
                 }
             } else { 
