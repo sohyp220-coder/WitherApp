@@ -61,7 +61,8 @@ function showWeather(position) {
                     i.className = 'fa fa-cloud';
                 }
             } else { 
-
+                ii.style.display = 'none';
+                iii.style.display = 'none';
                 i.className = 'fa fa-cloud-moon';
             }
 
