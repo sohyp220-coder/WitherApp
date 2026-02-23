@@ -51,7 +51,7 @@ body {
 }
 
 
-/* التنسيق الأساسي للموبايل (الشاشات الصغيرة) */
+
 div {
   display: flex;
   flex-direction: column;
@@ -93,7 +93,7 @@ i {
   word-wrap: break-word;
 }
 
-/* للشاشات المتوسطة (مثل التابلت) */
+
 @media(min-width: 300px) and (max-width: 1019px){
   h1 {
     font-size: 100px;
@@ -109,29 +109,31 @@ i {
   }
 }
 
-/* للشاشات الكبيرة (الكمبيوتر) */
+
 @media(min-width: 1020px){
   div {
     transform: translate(40px,-50px);
   }
   h1 {
-    font-size: 210px;
+    font-size: 180px;
   }
   i {
-    font-size: 330px;
+    font-size: 300px;
   }
   .p {
-    font-size: 90px;
+    font-size: 70px;
   }
   .a {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 
 @keyframes wai {
-  0% { opacity: 1; }
-  25% { opacity: .3; }
-  50% { opacity: .5; }
-  75% { opacity: 1; }
-  100% { opacity: 1; }
+  0% { opacity: 1; transform: scale(100%); }
+  25% { opacity: .3; transform: scale(70%); }
+  50% { opacity: .5; transform: scale(80%); }
+  75% { opacity: 1; transform: scale(100%); }
+  100% { opacity: 1; transform: scale(100%); }
 }
+
+
