@@ -16,7 +16,7 @@ A simple weather app that uses the Geolocation API to get the user's current loc
 
 ## Installation
 1. Clone the repository
-2. Replace `YOUR_API_KEY` in `script.js` with your actual OpenWeatherMap API key
+2. Replace `YOUR_API_KEY` in `script.js` with your actual Open-meto API key
 3. Open `index.html` in a web browser
 
 ## Usage
